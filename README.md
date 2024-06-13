@@ -33,6 +33,7 @@ pip install -r requirements.txt
 2. prepare the data : **load_raw_proteomics_data(),  def rename_columns(), def drop_protein()**
 3. describe the data: **def describe_proteins_and_samples()**:
 4. N1 normalization and log2 transformation : **def norm_and_log(df)**
+5. The processing steps is in Jopiter notebook : **procesing_data.ipynb**
 
 ### Feature selection : Univariate Cox regresssion
 This approach allows systematic evaluation of each protein's impact on survival, helping to pinpoint candidates for deeper biological or clinical investigation.
