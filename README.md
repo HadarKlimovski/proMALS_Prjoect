@@ -19,8 +19,14 @@ I plan on exploring the relationship of proteins to patients survival with linea
 
 ### Data procesing :
 - 2929 proteins were annotated based on [Human Proteome And uniprot database](https://www.uniprot.org/proteomes/UP000005640) across 179 ALS patients.
-- all the procesing steps stored in a utils.py file within functions.
+- all the procesing steps stored in a utils.py file within functions and all the lost and directories stored in configs.py file.
+
+```sh
+utils.py
+configs.py 
+```
 1. Use the following command to install the required dependencies:
+
 ```sh
 pip install -r requirements.txt
 ```
@@ -29,13 +35,13 @@ pip install -r requirements.txt
 4. N1 normalization and log2 transformation : **def norm_and_log(df)**
 
 ### Feature selection : Univariate Cox regresssion
-1. This approach allows systematic evaluation of each protein's impact on survival, helping to pinpoint candidates for deeper biological or clinical investigation.
+This approach allows systematic evaluation of each protein's impact on survival, helping to pinpoint candidates for deeper biological or clinical investigation.
 - Select proteins based on their statistical significance and effect size (hazard ratio), focusing on those possible greater correlation to patients’ survival.
-- Informetion about [Cox regresssion](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8651375/) analysis.
+- you can Informetion about [Cox regresssion](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8651375/) analysis.
 
 ### Models 
 1. Moltivariant Cox regression : linear model that calculates individual survival probability per patient and can estimate the hazard ratio of each protein, a statistic depicting the correlation between a protein’s level and patient’s survival.
-2. [Kaplan-Meier estimate](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3059453/)
+2. [Kaplan-Meier estimate](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3059453/) : a non-parametric statistical method used to estimate the survival probability over time from life-time data. It generates a survival curve that visualizes the probability of an event (In this case death) occurring at various time points, allowing for comparison between different groups.
 
 ### Outcome Analysis:
 In my application of these three methods, I aim to identify key features that influence the progression of ALS disease. The predictors (features) include protein abundance as well as clinical features such as sex,patients progressive state as measured by  deltaFRS, and disease format (bulbar or limb). Survival time serves as the target variable.
