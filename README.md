@@ -30,11 +30,11 @@ configs.py
 ```sh
 pip install -r requirements.txt
 ```
-2. prepare the data : **def load_raw_proteomics_data(),  def rename_columns(), def drop_protein()**
-3. describe the data: **def describe_proteins_and_samples()**:
+2. Prepare the data : **def load_raw_proteomics_data(),  def rename_columns(), def drop_protein()**
+3. Describe the data: **def describe_proteins_and_samples()**:
 4. N1 normalization and log2 transformation : **def norm_and_log(df)**
 5. The processing steps is in Jopiter notebook : **def procesing_data.ipynb**
-6. convert Nan val to 0.00001 : **def convert_nan**
+6. Convert Nan val to 0.00001 : **def convert_nan**
 
 ### Feature selection : Univariate Cox regresssion (cox.ipynb)
 This approach allows systematic evaluation of each protein's impact on survival, helping to pinpoint candidates for deeper biological or clinical investigation.
