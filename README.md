@@ -39,7 +39,7 @@ pip install -r requirements.txt
 ### Feature selection : Univariate Cox regresssion (cox.ipynb)
 This approach allows systematic evaluation of each protein's impact on survival, helping to pinpoint candidates for deeper biological or clinical investigation.
 - Select proteins based on their statistical significance and effect size (hazard ratio), focusing on those possible greater correlation to patients’ survival.
-- you can Informetion about [Cox regresssion](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8651375/) analysis.
+- You can see Informetion about [Cox regresssion](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8651375/) analysis.
   
 
 ### Models (cox.ipynb)
