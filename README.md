@@ -67,5 +67,5 @@ pytest
 ```
 
 
-This project was implemented as part of the [Python programming course](https://github.com/szabgab/wis-python-course-2024-04) at Weizmann Institute of Science (https://www.weizmann.ac.il/) taught by [Gabor Szabo](https://szabgab.com/)
+This project was implemented as part of the [Python programming course](https://github.com/szabgab/wis-python-course-2024-04) at the [Weizmann Institute of Science](https://www.weizmann.ac.il/) taught by [Gabor Szabo](https://szabgab.com/)
 
