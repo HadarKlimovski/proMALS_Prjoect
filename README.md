@@ -30,21 +30,17 @@ configs.py
 ```sh
 pip install -r requirements.txt
 ```
-2. Prepare the data : **def load_raw_proteomics_data(),  def rename_columns(), def drop_protein()**
-3. Describe the data: **def describe_proteins_and_samples()**:
-4. N1 normalization and log2 transformation : **def norm_and_log(df)**
-5. The processing steps is in Jopiter notebook : **def procesing_data.ipynb**
+2. Prepare the data to the model: **def load_raw_proteomics_data()**
+3.preforme cox univariant
+4.preforme Kaplan-Meier curve to visualization.
 
 
-### Feature selection : Univariate Cox regresssion (cox.ipynb)
+### Models : Univariate Cox regresssion (cox.ipynb)
 This approach allows systematic evaluation of each protein's impact on survival, helping to pinpoint candidates for deeper biological or clinical investigation.
 - Select proteins based on their statistical significance and effect size (hazard ratio), focusing on those possible greater correlation to patients’ survival.
 - You can see Informetion about [Cox regresssion](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8651375/) analysis.
-  
-
-### Models (cox.ipynb)
-1. Moltivariant Cox regression : linear model that calculates individual survival probability per patient and can estimate the hazard ratio of each protein, a statistic depicting the correlation between a protein’s level and patient’s survival.
 2. [Kaplan-Meier estimate](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3059453/) : a non-parametric statistical method used to estimate the survival probability over time from life-time data. It generates a survival curve that visualizes the probability of an event (In this case death) occurring at various time points, allowing for comparison between different groups.
+
 
 ### Outcome Analysis:
 In my application of these three methods, I aim to identify key features that influence the progression of ALS disease. The predictors (features) include protein abundance as well as clinical features such as sex,patients progressive state as measured by  deltaFRS, and disease format (bulbar or limb). Survival time serves as the target variable.
