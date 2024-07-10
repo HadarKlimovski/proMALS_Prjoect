@@ -55,7 +55,7 @@ In my application of these three methods, I aim to identify key features that in
 To run the program, use the following command in your terminal:
 
 ```sh
-python processing.py
+test_prepare_data_model.py
 ```
 
 ### Run Tests with pytest
