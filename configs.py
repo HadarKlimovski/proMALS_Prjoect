@@ -1,0 +1,63 @@
+import os
+
+RAW_PROTEOMICS_DATA = "report_DIANN_perseus.xlsx"
+
+
+CLINICAL_DATA = "clinical_data_hadar.csv"
+
+
+
+IMMUNE_PROTEINS = ["ORM1", "ORM2", "SERPINA1", "A2ML1", "A2M","APOA1",'APOA2', "HP", "HPR", "TFRC","TF", "ALB", "IGHA2", "IGHA1", "IGHD", "IGHG1","IGHG2",  "IGHG3", "IGHG4","IGHM", "ALB", "SERPINA3"]
+
+KERATIN = ['KRTAP4-9', 'KRT10', 'KRT87P', 'KRTAP16-1', 'KRT19', 'KRT86', 'KRT33A',  'KRT34', 'KRT36', 'KRT38', 'KRT75', 'KRT14', 'KRT6A', 'KRT6B', 'KRT1', 'KRT18', 'KRT8', 'KRT19', 'KRT7', 'KRT16', 'KRTAP2-3;KRTAP2-4', 'KRT3',  'KRT10', 'KRT13', 'KRT5', 'KRT15', 'KRT4', 'KRT9', 'KRT2', 'KRT6C', 'KRTAP10-10', 'KRTAP10-3', 'KRTAP10-9', 'KRTAP10-11', 'KRTAP10-12',
+       'KRTDAP', 'KRT83', 'KRT85', 'KRT76', 'KRT17', 'KRT33B', 'KRT32',
+       'KRT81', 'KRT72', 'KRT31', 'KRTAP20-2', 'KRTAP20-1', 'KRTAP6-1',
+       'KRTAP19-5', 'KRTAP13-4', 'KRTAP24-1', 'KRT71', 'KRTAP19-7',
+       'KRTAP13-2', 'KRT79', 'KRT40', 'KRT39', 'KRT80', 'KRT74', 'KRT28',
+       'KRT27', 'KRT25', 'KRT77', 'KRTAP13-1', 'KRTAP11-1', 'KRTAP8-1',
+       'KRTAP7-1', 'KRTAP1-3', 'KRT78', 'KRT35', 'KRT12', 'KRTAP9-8',
+       'KRTAP9-3', 'KRTAP4-6', 'KRTAP4-11', 'KRTAP4-1', 'KRTAP4-9', 'KRTAP4-8',
+       'KRTAP4-5', 'KRTAP4-4', 'KRTAP4-3', 'KRTAP4-2', 'KRTAP3-3', 'KRTAP3-2',
+       'KRTAP3-1', 'KRTAP1-5', 'KRTAP2-1;KRTAP2-2', 'KRT23', 'KRT84', 'KRT82']
+
+MIN_FEATURES =['MYO15B',
+ 'PDCD6',
+ 'OXSR1',
+ 'LMNA',
+ 'MT1E;MT1G;MT1M;MT1X;MT2A',
+ 'HSPB1',
+ 'CALM1;CALM2;CALM3',
+ 'KIF5B',
+ 'ALDH9A1',
+ 'EIF5A',
+ 'PPP2CA',
+ 'PAFAH1B2',
+ 'EIF4G1',
+ 'GLO1',
+ 'CRYZ',
+ 'DYNC1H1',
+ 'MAPRE2',
+ 'CENPI',
+ 'Age Onset (years)']
+
+COX_LIST = ['MYO15B',
+ 'PDCD6',
+ 'OXSR1',
+ 'LMNA',
+ 'MT1E;MT1G;MT1M;MT1X;MT2A',
+ 'HSPB1',
+ 'CALM1;CALM2;CALM3',
+ 'KIF5B',
+ 'ALDH9A1',
+ 'EIF5A',
+ 'PPP2CA',
+ 'PAFAH1B2',
+ 'EIF4G1',
+ 'GLO1',
+ 'CRYZ',
+ 'DYNC1H1',
+ 'MAPRE2',
+ 'CENPI',
+ 'Age Onset (years)',
+ 'Status dead=1',
+ 'Survival_from_onset (months)']
