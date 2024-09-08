@@ -23,9 +23,10 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import KFold
 
 
-from utils.py import prepare_data_to_model
+from utils import prepare_data_to_model
 
 from survival_analysis_utils import cox_proportional_hazard_model
+from configs import MIN_FEATURES
 
 
 
