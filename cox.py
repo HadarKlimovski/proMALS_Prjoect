@@ -14,7 +14,7 @@ from sklearn.feature_selection import VarianceThreshold
 from lifelines import KaplanMeierFitter
 from lifelines import CoxPHFitter, KaplanMeierFitter, statistics
 
-import pickle
+
 import matplotlib.pyplot as plt
 
 from sklearn.impute import KNNImputer
@@ -23,12 +23,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import KFold
 
 
-
-
-
-
-from configs import IMMUNE_PROTEINS, KERATIN, MIN_FEATURES,COX_LIST
-from survival_alanysis_utils.py import load_raw_proteomics_data, rename_columns, drop_protein, describe_proteins_and_samples, norm_and_log,prepare_data_to_model,describe_clinical_data
+from utils.py import prepare_data_to_model
 
 from survival_analysis_utils import cox_proportional_hazard_model
 
