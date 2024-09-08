@@ -1,7 +1,7 @@
 seaborn
 numpy
-os
-conda-forge::scikit-learn
+
+scikit-learn
 lifelines
-pickle
+
 matplotlib
