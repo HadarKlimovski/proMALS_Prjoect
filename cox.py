@@ -17,7 +17,7 @@ from lifelines import CoxPHFitter, KaplanMeierFitter, statistics
 
 import matplotlib.pyplot as plt
 
-from sklearn.impute import KNNImputer
+
 from sklearn.preprocessing import StandardScaler
 
 from sklearn.model_selection import KFold
