@@ -28,7 +28,7 @@ from sklearn.model_selection import KFold
 
 
 from configs import IMMUNE_PROTEINS, KERATIN, MIN_FEATURES,COX_LIST
-from utils import load_raw_proteomics_data, rename_columns, drop_protein, describe_proteins_and_samples, norm_and_log,prepare_data_to_model,describe_clinical_data
+from survival_alanysis_utils.py import load_raw_proteomics_data, rename_columns, drop_protein, describe_proteins_and_samples, norm_and_log,prepare_data_to_model,describe_clinical_data
 
 from survival_analysis_utils import cox_proportional_hazard_model
 
